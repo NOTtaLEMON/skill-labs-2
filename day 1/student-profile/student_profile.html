@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Profile & Course Information</title>
+</head>
+<body>
+
+  <!-- Header and Navigation -->
+  <header>
+    <h1>Student Profile</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#courses">Enrolled Courses</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Section with headings, paragraphs, list, and an image -->
+    <section id="about">
+      <h2>About Me</h2>
+      
+      <p>Hello! I am Anand, a 3rd semester student in RVCE. I am from the CSE branch and love learning about cse fundamentals. Web development is a favorite of mine. </p>
+      
+      <img src="C:\Users\ragha\Downloads\Education,_school,_classroom,_blackboard,_teacher_Fortepan_3612.jpg" alt="A headshot of the student" width="150">
+
+      <h3>My Core Skills</h3>
+      <ul>
+        <li>I possess a solid foundation in C programming, with a strong focus on data structures and algorithm implementation.</li>
+        <li>I understand basic web fundamentals and semantic markup to build accessible and well-structured web interfaces.</li>
+        <li>I maintain clean version control workflows using Git to collaborate on codebases and track software versions effectively.</li>
+      </ul>
+
+      <h3>Projects Worked On</h3>
+      <ul>
+        <li>Developed a smart walking stick prototype equipped with sensors and machine learning assistance to aid visually impaired navigation.</li>
+        <li>Engineered an Arduino-based emergency response device with an integrated monitoring dashboard for women's safety.</li>
+        <li>Implemented a comprehensive hospital triage and patient monitoring management system coded in C.</li>
+      </ul>
+    </section>
+
+    <hr>
+
+    <!-- Section with a table featuring thicker borders and semester scores -->
+    <section id="courses">
+      <h2>Enrolled Courses</h2>
+      <table border="3">
+        <tr>
+          <th>Academic Term</th>
+          <th>Assessment / Score</th>
+          <th>CG OR SG?</th>
+        </tr>
+        <tr>
+          <td>Semester 1</td>
+          <td>9.85</td>
+          <td>SGPA</td>
+        </tr>
+        <tr>
+          <td>Semester 2</td>
+          <td>9.65</td>
+          <td>SGPA</td>
+        </tr>
+        <tr>
+          <td>Overall</td>
+          <td>9.75</td>
+          <td>CGPA</td>
+        </tr>
+      </table>
+    </section>
+
+    <hr>
+
+    <!-- Section with a simple form -->
+    <section id="contact">
+      <h2>Contact & Course Selection Form</h2>
+      <form action="https://httpbin.org/get" method="get">
+        
+        <div style="margin-bottom: 10px;">
+          <label for="courseSelect">Select an Elective:</label><br>
+          <select id="courseSelect" name="course">
+            <option value="webdev">Bio Inspired Engg</option>
+            <option value="ai">Material Sci</option>
+            <option value="iot">Environment</option>
+          </select>
+        </div>
+
+        <div style="margin-bottom: 10px;">
+          <label for="studentName">Full Name:</label><br>
+          <input type="text" id="studentName" name="name" required>
+        </div>
+
+        <div style="margin-bottom: 10px;">
+          <label for="studentEmail">Email Address:</label><br>
+          <input type="email" id="studentEmail" name="email" required>
+        </div>
+
+        <button type="submit">Submit Registration</button>
+      
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 RV College of Engineering Student Profile</p>
+  </footer>
+
+</body>
+</html>
